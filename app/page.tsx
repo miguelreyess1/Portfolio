@@ -29,9 +29,6 @@ export default function Page() {
               <Link href="#inicio" className="text-sm font-medium hover:text-primary transition-colors">
                 Inicio
               </Link>
-              <Link href="#sobre-mi" className="text-sm font-medium hover:text-primary transition-colors">
-                Sobre Mí
-              </Link>
               <Link href="#habilidades" className="text-sm font-medium hover:text-primary transition-colors">
                 Habilidades
               </Link>
@@ -56,9 +53,6 @@ export default function Page() {
                   <div className="flex flex-col gap-4 mt-8">
                     <Link href="#inicio" className="text-lg font-medium hover:text-primary transition-colors">
                       Inicio
-                    </Link>
-                    <Link href="#sobre-mi" className="text-lg font-medium hover:text-primary transition-colors">
-                      Sobre Mí
                     </Link>
                     <Link href="#habilidades" className="text-lg font-medium hover:text-primary transition-colors">
                       Habilidades
