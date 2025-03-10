@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ArrowRight, Code, ExternalLink, Github, Linkedin, Mail, Menu, Moon, Sun, Phone } from "lucide-react"
+import { ArrowRight, Code, ExternalLink, Github, Linkedin, Mail, Menu, Moon, Sun, Phone, FileText } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -77,10 +77,10 @@ export default function Page() {
         </header>
 
         <main className="container py-8 md:py-12 space-y-12">
-          {/* Hero Section - keep existing gradient-bg */}
+          {/* Hero Section */}
           <section id="inicio" className="py-12 md:py-24 lg:py-32 gradient-bg rounded-3xl mb-12">
             <div className="mx-auto max-w-[58rem] space-y-6 text-center text-white p-8">
-              <h1 className="text-3xl font-bold leading-tigsht tracking-tighter md:text-5xl lg:text-6xl animate-fade-up">
+              <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl animate-fade-up">
                 Miguel Reyes Gómez
               </h1>
               <p className="text-lg md:text-xl opacity-90 animate-fade-up delay-150">
@@ -92,13 +92,23 @@ export default function Page() {
                     Ver Proyectos <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
+
                 <Button
                   size="lg"
                   variant="outline"
                   className="bg-blue-600 hover:bg-blue-950 hover:text-white border-white text-white"
-                  asChild
-                >
+                  asChild>
                   <Link href="#contacto">Contacto</Link>
+                </Button>
+
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="bg-blue-800 hover:bg-blue-950 hover:text-white border-white text-white"
+                  asChild>
+                  <a href="/CV-MiguelReyes.pdf" download="CV-MiguelReyes.pdf">
+                    Descargar CV
+                  </a>
                 </Button>
               </div>
             </div>
@@ -183,60 +193,50 @@ export default function Page() {
           </section>
 
           <section id="titulacion" className="py-12 md:py-24 lg:py-32 gradient-bg-secondary rounded-3xl">
-            <div className="container mx-auto px-4">
-              <h2 className="text-4xl font-bold mb-12 text-center gradient-text">
-                Titulación
-              </h2>
-              <div className="relative">
-                <div className="space-y-12 ml-8">
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 rounded-full bg-accent flex-shrink-0"></div>
-                    <div className="ml-6 p-6 bg-white rounded-lg shadow-sm w-full transition-transform hover:scale-102 duration-300 gradient-border">
-                      <h3 className="text-2xl font-bold text-accent">
-                        Grado Medio en Sistemas Microinformáticos y Redes
-                      </h3>
-                      <p className="text-gray-700 mt-2">2020 - 2023</p>
-                      <p className="text-gray-600 mt-2">
-                        Formación en instalación, mantenimiento y reparación de sistemas informáticos y redes.
-                      </p>
-                    </div>
-                  </div>
-                  {/* Entrada 2 */}
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 rounded-full bg-accent flex-shrink-0"></div>
-                    <div className="ml-6 p-6 bg-white rounded-lg shadow-sm w-full transition-transform hover:scale-102 duration-300 gradient-border">
-                      <h3 className="text-2xl font-bold text-accent">
-                        Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)
-                      </h3>
-                      <p className="text-gray-700 mt-2">2023 - 2025</p>
-                      <p className="text-gray-600 mt-2">
-                        Especialización en desarrollo de software para diferentes plataformas y entornos.
-                      </p>
-                    </div>
-                  </div>
-                  {/* Entrada 3 */}
-                  <div className="flex items-center">
-                    <div className="w-6 h-6 rounded-full bg-accent flex-shrink-0"></div>
-                    <div className="ml-6 p-6 bg-white rounded-lg shadow-sm w-full transition-transform hover:scale-102 duration-300 gradient-border">
-                      <h3 className="text-2xl font-bold text-accent">
-                        Google Cloud Database Engineer Learning Path
-                      </h3>
-                      <p className="text-gray-700 mt-2">Completado en Marzo de 2025</p>
-                      <p className="text-gray-600 mt-2">
-                      Certificado en el Database Engineer Learning Path de Google Cloud, demostrando habilidades en diseño y gestión de bases de datos en la nube.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl font-bold mb-12 text-center gradient-text">
+      Titulación
+    </h2>
+    <div className="space-y-8">
+      {/* Tarjeta 1 */}
+      <div className="p-6 bg-white rounded-lg shadow-sm w-full transition-transform hover:scale-102 duration-300 gradient-border">
+        <h3 className="text-2xl font-bold text-accent">
+          Grado Medio en Sistemas Microinformáticos y Redes
+        </h3>
+        <p className="text-gray-700 mt-2">2020 - 2023</p>
+        <p className="text-gray-600 mt-2">
+          Formación en instalación, mantenimiento y reparación de sistemas informáticos y redes.
+        </p>
+      </div>
+      {/* Tarjeta 2 */}
+      <div className="p-6 bg-white rounded-lg shadow-sm w-full transition-transform hover:scale-102 duration-300 gradient-border">
+        <h3 className="text-2xl font-bold text-accent">
+          Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)
+        </h3>
+        <p className="text-gray-700 mt-2">2023 - 2025</p>
+        <p className="text-gray-600 mt-2">
+          Especialización en desarrollo de software para diferentes plataformas y entornos.
+        </p>
+      </div>
+      {/* Tarjeta 3 */}
+      <div className="p-6 bg-white rounded-lg shadow-sm w-full transition-transform hover:scale-102 duration-300 gradient-border">
+        <h3 className="text-2xl font-bold text-accent">
+          Google Cloud Database Engineer Learning Path
+        </h3>
+        <p className="text-gray-700 mt-2">Completado en Marzo de 2025</p>
+        <p className="text-gray-600 mt-2">
+          Certificado en el Database Engineer Learning Path de Google Cloud, demostrando habilidades en diseño y gestión de bases de datos en la nube.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+          
           {/* Projects Section */}
           <section id="proyectos" className="py-12 md:py-24 lg:py-32 gradient-bg-accent rounded-3xl">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl font-bold mb-12 text-center gradient-text">Mis Proyectos</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {/* Project 1 */}
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow gradient-border">
                   <div className="h-48 overflow-hidden">
                     <img
@@ -270,7 +270,6 @@ export default function Page() {
                   </CardFooter>
                 </Card>
 
-                {/* Project 2 */}
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow gradient-border">
                   <div className="h-48 overflow-hidden">
                     <img
@@ -302,7 +301,6 @@ export default function Page() {
                   </CardFooter>
                 </Card>
 
-                {/* Project 3 */}
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow gradient-border">
                   <div className="h-48 overflow-hidden">
                     <img
@@ -350,15 +348,17 @@ export default function Page() {
                 <div className="flex gap-4">
                   <Link 
                     href="https://github.com/miguelreyess1" 
-                    className="flex items-center justify-center px-4 py-2 border border-primary rounded hover:bg-primary hover:text-white transition-colors"
-                  >
+                    className="flex items-center justify-center px-4 py-2 border border-primary rounded hover:bg-primary hover:text-white transition-colors">
                     <Github className="h-5 w-5" />
                   </Link>
                   <Link 
                     href="https://www.linkedin.com/in/miguel-reyes-g%C3%B3mez-66a170293/" 
-                    className="flex items-center justify-center px-4 py-2 border border-primary rounded hover:bg-primary hover:text-white transition-colors"
-                  >
+                    className="flex items-center justify-center px-4 py-2 border border-primary rounded hover:bg-primary hover:text-white transition-colors">
                     <Linkedin className="h-5 w-5" />
+                  </Link>
+                  <Link href="/CV-MiguelReyes.pdf" download="CV-MiguelReyes.pdf" 
+                  className="flex items-center justify-center px-4 py-2 border border-primary rounded hover:bg-primary hover:text-white transition-colors">
+                    <FileText className="h-5 w-5"/>
                   </Link>
                 </div>
                 <p>
@@ -391,6 +391,10 @@ export default function Page() {
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>
+              <Link href="/CV-MiguelReyes.pdf" download="CV-MiguelReyes.pdf" className="text-muted-foreground hover:text-primary transition-colors">
+                <FileText className="h-5 w-5"/>
+                <span className="sr-only">Descargar CV</span>
+              </Link>
             </div>
           </div>
         </footer>
@@ -398,4 +402,3 @@ export default function Page() {
     </div>
   )
 }
-
