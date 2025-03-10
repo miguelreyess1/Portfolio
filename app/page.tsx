@@ -23,7 +23,7 @@ export default function Page() {
           <div className="container flex h-16 items-center justify-between py-4">
             <div className="flex items-center gap-2 font-bold">
               <Code className="h-5 w-5 text-primary" />
-              <span className="gradient-text">Miguel Reyes Gomez</span>
+              <span className="gradient-text text-xl">Miguel Reyes Gomez</span>
             </div>
             <div className="hidden md:flex items-center gap-6">
               <Link href="#inicio" className="text-sm font-medium hover:text-primary transition-colors">
