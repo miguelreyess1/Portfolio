@@ -60,7 +60,7 @@ export default function Page() {
                     <Link href="#habilidades" className="text-lg font-medium hover:text-primary transition-colors">
                       Habilidades
                     </Link>
-                    <Link href="#titulacion" className="text-sm font-medium hover:text-primary transition-colors">
+                    <Link href="#titulacion" className="text-lg font-medium hover:text-primary transition-colors">
                       Titulación
                     </Link>
                     <Link href="#proyectos" className="text-lg font-medium hover:text-primary transition-colors">
