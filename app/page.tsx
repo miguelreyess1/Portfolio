@@ -32,6 +32,9 @@ export default function Page() {
               <Link href="#habilidades" className="text-sm font-medium hover:text-primary transition-colors">
                 Habilidades
               </Link>
+              <Link href="#titulacion" className="text-sm font-medium hover:text-primary transition-colors">
+                Titulación
+              </Link>
               <Link href="#proyectos" className="text-sm font-medium hover:text-primary transition-colors">
                 Proyectos
               </Link>
@@ -56,6 +59,9 @@ export default function Page() {
                     </Link>
                     <Link href="#habilidades" className="text-lg font-medium hover:text-primary transition-colors">
                       Habilidades
+                    </Link>
+                    <Link href="#titulacion" className="text-sm font-medium hover:text-primary transition-colors">
+                      Titulación
                     </Link>
                     <Link href="#proyectos" className="text-lg font-medium hover:text-primary transition-colors">
                       Proyectos
@@ -141,7 +147,7 @@ export default function Page() {
                       </li>
                       <li className="flex items-center">
                         <div className="w-2 h-2 rounded-full bg-secondary mr-2"></div>
-                        Express.js
+                        Java
                       </li>
                       <li className="flex items-center">
                         <div className="w-2 h-2 rounded-full bg-secondary mr-2"></div>
@@ -176,6 +182,55 @@ export default function Page() {
             </div>
           </section>
 
+          <section id="titulacion" className="py-12 md:py-24 lg:py-32 gradient-bg-secondary rounded-3xl">
+            <div className="container mx-auto px-4">
+              <h2 className="text-4xl font-bold mb-12 text-center gradient-text">
+                Titulación
+              </h2>
+              <div className="relative">
+                <div className="space-y-12 ml-8">
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-accent flex-shrink-0"></div>
+                    <div className="ml-6 p-6 bg-white rounded-lg shadow-sm w-full transition-transform hover:scale-102 duration-300 gradient-border">
+                      <h3 className="text-2xl font-bold text-accent">
+                        Grado Medio en Sistemas Microinformáticos y Redes
+                      </h3>
+                      <p className="text-gray-700 mt-2">2020 - 2023</p>
+                      <p className="text-gray-600 mt-2">
+                        Formación en instalación, mantenimiento y reparación de sistemas informáticos y redes.
+                      </p>
+                    </div>
+                  </div>
+                  {/* Entrada 2 */}
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-accent flex-shrink-0"></div>
+                    <div className="ml-6 p-6 bg-white rounded-lg shadow-sm w-full transition-transform hover:scale-102 duration-300 gradient-border">
+                      <h3 className="text-2xl font-bold text-accent">
+                        Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)
+                      </h3>
+                      <p className="text-gray-700 mt-2">2023 - 2025</p>
+                      <p className="text-gray-600 mt-2">
+                        Especialización en desarrollo de software para diferentes plataformas y entornos.
+                      </p>
+                    </div>
+                  </div>
+                  {/* Entrada 3 */}
+                  <div className="flex items-center">
+                    <div className="w-6 h-6 rounded-full bg-accent flex-shrink-0"></div>
+                    <div className="ml-6 p-6 bg-white rounded-lg shadow-sm w-full transition-transform hover:scale-102 duration-300 gradient-border">
+                      <h3 className="text-2xl font-bold text-accent">
+                        Google Cloud Database Engineer Learning Path
+                      </h3>
+                      <p className="text-gray-700 mt-2">Completado en Marzo de 2025</p>
+                      <p className="text-gray-600 mt-2">
+                      Certificado en el Database Engineer Learning Path de Google Cloud, demostrando habilidades en diseño y gestión de bases de datos en la nube.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           {/* Projects Section */}
           <section id="proyectos" className="py-12 md:py-24 lg:py-32 gradient-bg-accent rounded-3xl">
             <div className="container mx-auto px-4">
