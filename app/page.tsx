@@ -211,7 +211,7 @@ export default function Page() {
       {/* Tarjeta 2 */}
       <div className="p-6 bg-white rounded-lg shadow-sm w-full transition-transform hover:scale-102 duration-300 gradient-border">
         <h3 className="text-2xl font-bold text-accent">
-          Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)
+          Grado Superior en Desarrollo de Aplicaciones Multiplataforma
         </h3>
         <p className="text-gray-700 mt-2">2023 - 2025</p>
         <p className="text-gray-600 mt-2">
