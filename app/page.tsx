@@ -287,7 +287,7 @@ export default function Page() {
                   </CardContent>
                   <CardFooter className="flex justify-between">
                     <Button variant="outline" size="sm" asChild>
-                      <Link href="https://github.com/miguelreyess1/Portfolio-MiguelReyes" className="flex items-center">
+                      <Link href="https://github.com/miguelreyess1/Portfolio" className="flex items-center">
                         <Github className="mr-2 h-4 w-4" />
                         Código
                       </Link>
